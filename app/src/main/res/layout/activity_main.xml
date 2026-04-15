@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Оберіть тип телефону:" />
+
+    <Spinner
+        android:id="@+id/spinnerPhoneType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Оберіть виробника:" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupBrands"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp">
+
+        <RadioButton android:id="@+id/radioSamsung" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Samsung" />
+        <RadioButton android:id="@+id/radioApple" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Apple" />
+        <RadioButton android:id="@+id/radioXiaomi" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Xiaomi" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/buttonOk"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ОК" />
+
+    <TextView
+        android:id="@+id/textResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+</LinearLayout>
